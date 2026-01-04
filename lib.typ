@@ -240,12 +240,12 @@
       v(-space / 1.5)
       set align(right + top)
       context {
-        let last = counter(page).final().first()
+        // let last = counter(page).final().first()
         let current = here().page()
         set text(weight: "bold")
         set text(fill: white) if theme == "full"
         set text(fill: title-color) if theme == "normal"
-        [#current / #last]
+        [#current]
       }
     }
     ],
